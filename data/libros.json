@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "libro": "Harry Potter y la piedra filosofal",
+      "libro": "Harry Potter y la piedra filosofal (1)",
       "titulo_original": "Harry Potter and the Sorcerer's Stone",
       "fecha_de_lanzamiento": "26 de junio de 1997",
       "autora": "J. K. Rowling",
@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "libro": "Harry Potter y la cámara secreta",
+      "libro": "Harry Potter y la cámara secreta (2)",
       "titulo_original": "Harry Potter and the chamber of secrets",
       "fecha_de_lanzamiento": "2 de julio de 1998",
       "autora": "J. K. Rowling",
@@ -17,7 +17,7 @@
     },
     {
       "id": 3,
-      "libro": "Harry Potter y el prisionero de Azkaban",
+      "libro": "Harry Potter y el prisionero de Azkaban (3)",
       "titulo_original": "Harry Potter and the Prisoner of Azkaban",
       "fecha_de_lanzamiento": "8 de julio de 1999",
       "autora": "J. K. Rowling",
@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "libro": "Harry Potter y el cáliz de fuego",
+      "libro": "Harry Potter y el cáliz de fuego (4)",
       "titulo_original": "Harry Potter and the Goblet of Fire",
       "fecha_de_lanzamiento": "8 de julio de 2000",
       "autora": "J. K. Rowling",
@@ -33,7 +33,7 @@
     },
     {
       "id": 5,
-      "libro": "Harry Potter y la orden del Fénix",
+      "libro": "Harry Potter y la orden del Fénix (5)",
       "titulo_original": "Harry Potter and the Order of the Phoenix",
       "fecha_de_lanzamiento": "21 de junio de 2003",
       "autora": "J. K. Rowling",
@@ -41,7 +41,7 @@
     },
     {
       "id": 6,
-      "libro": "Harry Potter y el misterio del príncipe",
+      "libro": "Harry Potter y el misterio del príncipe (6)",
       "titulo_original": "Harry Potter and the Half-Blood Prince",
       "fecha_de_lanzamiento": "16 de julio de 2005",
       "autora": "J. K. Rowling",
@@ -49,7 +49,7 @@
     },
     {
       "id": 7,
-      "libro": "Harry Potter y las reliquias de la muerte",
+      "libro": "Harry Potter y las reliquias de la muerte (7)",
       "titulo_original": "Harry Potter and the Deathly Hallows",
       "fecha_de_lanzamiento": "21 de julio de 2007",
       "autora": "J. K. Rowling",
@@ -57,7 +57,7 @@
     },
     {
       "id": 8,
-      "libro": "Harry Potter y el legado maldito",
+      "libro": "Harry Potter y el legado maldito (8)",
       "titulo_original": "Harry Potter and the Cursed Child",
       "fecha_de_lanzamiento": "30 de julio de 2016",
       "autora": "J. K. Rowling",
