@@ -1,29 +1,20 @@
 // API    
 
-const URLGET = "https://fedeperin-harry-potter-api.herokuapp.com/db"
+const URLGET = "../data/personajes.json"
 
-fetch(URLGET)
-	.then((res) => res.json())
-	.then((data) => {
-		/*
-			Trae toda la info de la API y la deja dentro de la variable data
-			También muestra la variable data por consola
-		*/
-		console.log(data)
-	})
-	.catch((e) => console.log(e))
 
     $(document).ready(function(){
- const btnArrowBack = $('#btnArrowBack');
+const btnArrowBack = $('#btnArrowBack');
 
 
- btnArrowBack.on('click', gotoBackHome);
+btnArrowBack.on('click', gotoBackHome);
 
- function gotoBackHome() {
+function gotoBackHome() {
     window.history.go(-1);
 }
+const character = $('#personaje')
 const search = $('#search');
-const ingreso = $('.ingreso');
+
 
 search.append('<button class="uno btn btn-primary mt-2 m-1">Buscar</button>');
 search.append('<button class="todos btn btn-primary mt-2 m-1">Mostrar todos</button>');
@@ -31,14 +22,28 @@ search.append('<button class="todos btn btn-primary mt-2 m-1">Mostrar todos</but
 
 $(".todos").click(() => {
     $.get(URLGET, function(respuesta,estado) {
-        console.log(estado)
         if(estado === "success") {
             let datos = respuesta;
             for (const dato of datos) {
-                $("#tabla").append(`<tbody><td>${dato.personajes.personaje}</td><td>${dato.casaDeHogwarts}</td><td>${dato.interpretado_por}</td></tbody>`);
+                $("#tabla").append(`<tbody><td>${dato.personaje}</td><td>${dato.apodo}</td><td>${dato.casaDeHogwarts}</td><td>${dato.hijos}</td><td>${dato.interpretado_por}</td></tbody>`);
             }
         }
     })
 })
 
+$('.uno').click(() => {
+    $.get(URLGET, function(respuesta,estado) {
+        if(estado==="success") {
+            let info = respuesta;
+            let buscando = info.filter(el => el.includes( $('#personaje').val()) )
+            if (buscando) {
+                $("#tabla").append(`<tbody><td>${el.personaje}</td><td>${el.apodo}</td><td>${el.casaDeHogwarts}</td><td>${el.hijos}</td><td>${el.interpretado_por}</td></tbody>`)
+            }else{
+                $("#tabla").append(`<p>No se encontraron los personajes</p>`)
+            }
+        }
+    })
+
 })
+})
+

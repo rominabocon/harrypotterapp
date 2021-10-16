@@ -4,12 +4,19 @@
     padding: 0;
 }
 body {
+    background-color: #b4ac94;
     background-image: url("../media/hpback.jpeg");
-    background-color: red;
     width: 100%;
     background-position: center;
+    background-repeat:none;
+    @media all and (min-width: 3000px) {
+        height: 1500px;
+    }
     #cuerpoPrincipal {
         height: 600px;
+        @media all and (min-width: 2500px) {
+            height: 1000px;
+        }
         .card {
             margin-top: 200px;
             background-color: #aa3411 !important;
@@ -52,39 +59,72 @@ body {
             }
         }
     }
-    .header {
-        display: flex;
-        align-items: center;
-        height: 15vh;
-        padding: 0 3em;
-        position: relative;
-        color: #f09535;
-        font-size: 25px;
-        .header__left {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 100%;
+            .header {
+                display: flex;
+                align-items: center;
+                height: 15vh;
+                padding: 0 3em;
+                position: relative;
+                color: #f09535;
+                font-size: 25px;
+                .header__left {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    }
             }
-    }
-    #busqueda{
-        height: 500px;
-        width: 100%;
-        .tarjetaBusqueda {
-            .card{
-                width: 300px;
-                margin-top: 100px;
-                background-color: #aa3411 !important;
-                color: #f49924 !important;
-                .btn-primary {
-                    background-color: #c48c5c !important;
-                    border-color: #c48c5c !important;
+            #busqueda{
+                // height: 300px;
+                width: 100%;
+                .tarjetaBusqueda {
+                    .card{
+                        width: 300px;
+                        margin-top: 100px;
+                        background-color: #aa3411 !important;
+                        color: #f49924 !important;
+                        .btn-primary {
+                            background-color: #c48c5c !important;
+                            border-color: #c48c5c !important;
+                        }
+                    }
+                }
+                
+            }
+            #tabla {
+                color: #f49924;
+                width: 100%;
+            }
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1rem;
+                padding: 0 3em;
+                height: 10vh;
+                color: #fca43c;
+                .footer__links {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 8rem;
+                    list-style-type: none;
+                    .iconFooter {
+                        display: flex;
+                        font-size: 1rem;
+                        width: 2rem;
+                        height: 2rem;
+                        text-decoration: none;
+                        border-radius: 9px;
+                        background: #f49924;
+                        color: #5c140c;
+                        box-shadow: 3px 3px 3px #070911, -3px -3px 3px #22262a;
+                        &:hover{
+                            box-shadow: inset 3px 3px 15px #070911, inset -2px -2px 3px #22262a;
+                        }
+                        i {
+                            margin: auto;
+                            }
+                    }
                 }
             }
         }
-        
-    }
-    #tabla {
-        color: #f49924;
-    }
-}

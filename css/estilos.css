@@ -5,14 +5,27 @@
 }
 
 body {
+  background-color: #b4ac94;
   background-image: url("../media/hpback.jpeg");
-  background-color: red;
   width: 100%;
   background-position: center;
+  background-repeat: none;
+}
+
+@media all and (min-width: 3000px) {
+  body {
+    height: 1500px;
+  }
 }
 
 body #cuerpoPrincipal {
   height: 600px;
+}
+
+@media all and (min-width: 2500px) {
+  body #cuerpoPrincipal {
+    height: 1000px;
+  }
 }
 
 body #cuerpoPrincipal .card {
@@ -105,7 +118,6 @@ body .header .header__left {
 }
 
 body #busqueda {
-  height: 500px;
   width: 100%;
 }
 
@@ -123,5 +135,57 @@ body #busqueda .tarjetaBusqueda .card .btn-primary {
 
 body #tabla {
   color: #f49924;
+  width: 100%;
+}
+
+body .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  padding: 0 3em;
+  height: 10vh;
+  color: #fca43c;
+}
+
+body .footer .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8rem;
+  list-style-type: none;
+}
+
+body .footer .footer__links .iconFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  background: #f49924;
+  color: #5c140c;
+  -webkit-box-shadow: 3px 3px 3px #070911, -3px -3px 3px #22262a;
+          box-shadow: 3px 3px 3px #070911, -3px -3px 3px #22262a;
+}
+
+body .footer .footer__links .iconFooter:hover {
+  -webkit-box-shadow: inset 3px 3px 15px #070911, inset -2px -2px 3px #22262a;
+          box-shadow: inset 3px 3px 15px #070911, inset -2px -2px 3px #22262a;
+}
+
+body .footer .footer__links .iconFooter i {
+  margin: auto;
 }
 /*# sourceMappingURL=estilos.css.map */
