@@ -120,4 +120,8 @@ body #busqueda .tarjetaBusqueda .card .btn-primary {
   background-color: #c48c5c !important;
   border-color: #c48c5c !important;
 }
+
+body #tabla {
+  color: #f49924;
+}
 /*# sourceMappingURL=estilos.css.map */

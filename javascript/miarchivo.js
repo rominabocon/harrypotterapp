@@ -22,9 +22,6 @@ fetch(URLGET)
  function gotoBackHome() {
     window.history.go(-1);
 }
-
-
-})
 const search = $('#search');
 const ingreso = $('.ingreso');
 
@@ -38,8 +35,10 @@ $(".todos").click(() => {
         if(estado === "success") {
             let datos = respuesta;
             for (const dato of datos) {
-                $("#tabla").append(`<tbody><td>${dato.personajes.personaje}</td><td>${dato.casaDeHogwarts}</td><td>${dato.personajes.id}</td><td>${dato.interpretado_por}</td></tbody>`);
+                $("#tabla").append(`<tbody><td>${dato.personajes.personaje}</td><td>${dato.casaDeHogwarts}</td><td>${dato.interpretado_por}</td></tbody>`);
             }
         }
     })
+})
+
 })
