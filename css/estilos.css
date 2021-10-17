@@ -55,13 +55,19 @@ body #cuerpoPrincipal {
   }
 }
 
-body #cuerpoPrincipal .card {
+@media all and (min-width: 375px) {
+  body #cuerpoPrincipal #quiz {
+    width: 100%;
+  }
+}
+
+body #cuerpoPrincipal #quiz .card {
   margin-top: 200px;
   background-color: #aa3411 !important;
   color: #f49924 !important;
 }
 
-body #cuerpoPrincipal .card .btn-primary {
+body #cuerpoPrincipal #quiz .card .btn-primary {
   background-color: #c48c5c !important;
   border-color: #c48c5c !important;
 }
@@ -160,9 +166,24 @@ body #busqueda .tarjetaBusqueda .card .btn-primary {
   border-color: #c48c5c !important;
 }
 
-body #tabla {
+@media all and (min-width: 375px) {
+  body .container {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body .container #tabla {
   color: #f49924;
   width: 100%;
+}
+
+@media all and (min-width: 375px) {
+  body .container #tabla {
+    margin: 5px;
+  }
 }
 
 body .footer {
@@ -179,6 +200,7 @@ body .footer {
   padding: 0 3em;
   height: 10vh;
   color: #fca43c;
+  margin-top: 50px;
 }
 
 body .footer .footer__links {
@@ -220,6 +242,13 @@ body #formContacto {
   width: 50%;
   margin: auto;
   color: #f09535;
+}
+
+@media all and (min-width: 375px) {
+  body #formContacto {
+    width: 70%;
+    margin-bottom: 10px;
+  }
 }
 
 body #formContacto #btnEnviarForm {

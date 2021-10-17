@@ -26,7 +26,7 @@ $(".todos").click(() => {
         if(estado === "success") {
             let datos = respuesta;
             for (const dato of datos) {
-                $("#tabla").append(`<tbody class="animate__animated animate__backInDown"><td>${dato.personaje}</td><td>${dato.apodo}</td><td>${dato.casaDeHogwarts}</td><td>${dato.hijos}</td><td>${dato.interpretado_por}</td></tbody>`);
+                $("#tabla").append(`<tbody class="animate__animated animate__backInDown"><td>${dato.personaje}</td><td>${dato.casaDeHogwarts}</td><td>${dato.hijos}</td></tbody>`);
             }
         }
     })

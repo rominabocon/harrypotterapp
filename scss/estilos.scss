@@ -39,6 +39,10 @@ body {
         @media all and (min-width: 2500px) {
             height: 1000px;
         }
+        #quiz{
+        @media all and (min-width: 375px){
+            width: 100%;
+        }
         .card {
             margin-top: 200px;
             background-color: #aa3411 !important;
@@ -47,6 +51,7 @@ body {
                 background-color: #c48c5c !important;
                 border-color: #c48c5c !important;
             }
+        }
         }
     }
     .footer {
@@ -113,10 +118,20 @@ body {
                 }
                 
             }
-            #tabla {
-                color: #f49924;
-                width: 100%;
+            .container {
+                @media all and (min-width: 375px){
+                width: 80%;
+                justify-content: center;
+                }
+                #tabla {
+                    color: #f49924;
+                    width: 100%;
+                    @media all and (min-width: 375px){
+                        margin: 5px;
+                    }
+                }
             }
+
             .footer {
                 display: flex;
                 justify-content: space-between;
@@ -125,6 +140,7 @@ body {
                 padding: 0 3em;
                 height: 10vh;
                 color: #fca43c;
+                margin-top: 50px;
                 .footer__links {
                     display: flex;
                     justify-content: space-between;
@@ -153,6 +169,10 @@ body {
         width: 50%;
         margin: auto;
         color: #f09535;
+        @media all and (min-width: 375px){
+        width: 70%;
+        margin-bottom: 10px;
+        }
         #btnEnviarForm{
             text-align: center;
             button {

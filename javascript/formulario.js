@@ -7,7 +7,7 @@ class Contacto {
         this.email = email;
         this.comentario = comentario;
     }
-}
+}   
 
 const miFormulario = document.getElementById("formContacto");
 
@@ -28,7 +28,7 @@ const nuevo = new Contacto (nombre, apellido, telefono, email, comentario);
 console.log(nuevo);
 
 
-console.log("Haz hecho click en el boton enviar formulario");
+Swal.fire('Hemos recibido tu consulta');
 contactosRegistrados.push(nuevo);
 localStorage.setItem("usuario", JSON.stringify(contactosRegistrados));
 }
