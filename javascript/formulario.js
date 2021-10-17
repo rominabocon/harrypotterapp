@@ -28,7 +28,11 @@ const nuevo = new Contacto (nombre, apellido, telefono, email, comentario);
 console.log(nuevo);
 
 
-Swal.fire('Hemos recibido tu consulta');
+Swal.fire(
+    'Hemos recibido correctamente tu formulario.',
+    '¡Pronto nos comunicaremos con vos!',
+    'success'
+  );
 contactosRegistrados.push(nuevo);
 localStorage.setItem("usuario", JSON.stringify(contactosRegistrados));
 }

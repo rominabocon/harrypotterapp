@@ -94,6 +94,9 @@ body {
                 position: relative;
                 color: #f09535;
                 font-size: 25px;
+                @media all and (min-width: 375px){
+                    padding: 0 1em;
+                } 
                 .header__left {
                     display: flex;
                     justify-content: flex-start;
@@ -119,9 +122,8 @@ body {
                 
             }
             .container {
-                @media all and (min-width: 375px){
-                width: 80%;
-                justify-content: center;
+                @media all and (max-width: 375px){
+                margin-left: 0px;
                 }
                 #tabla {
                     color: #f49924;

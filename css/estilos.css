@@ -137,6 +137,12 @@ body .header {
   font-size: 25px;
 }
 
+@media all and (min-width: 375px) {
+  body .header {
+    padding: 0 1em;
+  }
+}
+
 body .header .header__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,12 +172,9 @@ body #busqueda .tarjetaBusqueda .card .btn-primary {
   border-color: #c48c5c !important;
 }
 
-@media all and (min-width: 375px) {
+@media all and (max-width: 375px) {
   body .container {
-    width: 80%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-left: 0px;
   }
 }
 
