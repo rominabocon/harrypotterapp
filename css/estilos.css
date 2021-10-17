@@ -18,6 +18,33 @@ body {
   }
 }
 
+body .btnContacto {
+  float: right;
+  color: #5c140c;
+  margin-right: 10px;
+}
+
+body .btnContacto .iconNav {
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  background: #f49924;
+  color: #5c140c;
+  -webkit-box-shadow: 3px 3px 3px #070911, -3px -3px 3px #22262a;
+          box-shadow: 3px 3px 3px #070911, -3px -3px 3px #22262a;
+}
+
+body .btnContacto .iconNav:hover {
+  -webkit-box-shadow: inset 3px 3px 15px #070911, inset -2px -2px 3px #22262a;
+          box-shadow: inset 3px 3px 15px #070911, inset -2px -2px 3px #22262a;
+}
+
+body .btnContacto .iconNav i {
+  margin: auto;
+}
+
 body #cuerpoPrincipal {
   height: 600px;
 }
@@ -122,7 +149,7 @@ body #busqueda {
 }
 
 body #busqueda .tarjetaBusqueda .card {
-  width: 300px;
+  width: 350px;
   margin-top: 100px;
   background-color: #aa3411 !important;
   color: #f49924 !important;
@@ -187,5 +214,19 @@ body .footer .footer__links .iconFooter:hover {
 
 body .footer .footer__links .iconFooter i {
   margin: auto;
+}
+
+body #formContacto {
+  width: 50%;
+  margin: auto;
+  color: #f09535;
+}
+
+body #formContacto #btnEnviarForm {
+  text-align: center;
+}
+
+body #formContacto #btnEnviarForm button {
+  background-color: #f49924;
 }
 /*# sourceMappingURL=estilos.css.map */

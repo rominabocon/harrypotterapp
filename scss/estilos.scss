@@ -12,6 +12,28 @@ body {
     @media all and (min-width: 3000px) {
         height: 1500px;
     }
+.btnContacto {
+    float:right;
+    color: #5c140c;
+    margin-right: 10px;
+    .iconNav {
+            font-size: 2rem;
+            width: 2rem;
+            height: 2rem;
+            text-decoration: none;
+            border-radius: 9px;
+            background: #f49924;
+            color: #5c140c;
+            box-shadow: 3px 3px 3px #070911, -3px -3px 3px #22262a;
+            &:hover{
+                box-shadow: inset 3px 3px 15px #070911, inset -2px -2px 3px #22262a;
+            }
+            i {
+                margin: auto;
+                }
+        }
+    }
+
     #cuerpoPrincipal {
         height: 600px;
         @media all and (min-width: 2500px) {
@@ -79,7 +101,7 @@ body {
                 width: 100%;
                 .tarjetaBusqueda {
                     .card{
-                        width: 300px;
+                        width: 350px;
                         margin-top: 100px;
                         background-color: #aa3411 !important;
                         color: #f49924 !important;
@@ -127,4 +149,15 @@ body {
                     }
                 }
             }
+    #formContacto {
+        width: 50%;
+        margin: auto;
+        color: #f09535;
+        #btnEnviarForm{
+            text-align: center;
+            button {
+            background-color: #f49924;
+            }
         }
+    }
+}
